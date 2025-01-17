@@ -7,4 +7,5 @@ export interface GameState {
   currentPlayer: Player;
   winner: Player | 'draw' | null;
   winningCombination: number[] | null;
+  discoMode: boolean;
 }

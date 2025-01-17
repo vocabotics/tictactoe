@@ -4,6 +4,7 @@ import { GameState, Player, Board } from '@/types/game';
 interface GameStore extends GameState {
   makeMove: (index: number) => void;
   resetGame: () => void;
+  toggleDisco: () => void;
 }
 
 const initialState: GameState = {
@@ -11,6 +12,7 @@ const initialState: GameState = {
   currentPlayer: 'X',
   winner: null,
   winningCombination: null,
+  discoMode: false,
 };
 
 const winningCombos = [
@@ -52,4 +54,5 @@ export const useGameStore = create<GameStore>((set) => ({
     });
   },
   resetGame: () => set(initialState),
+  toggleDisco: () => set(state => ({ discoMode: !state.discoMode })),
 }));
