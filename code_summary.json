@@ -1,0 +1,43 @@
+{
+  "directories": [
+    "src/",
+    "src/components/",
+    "src/pages/",
+    "src/store/",
+    "src/types/"
+  ],
+  "files": [
+    "src/types/game.ts",
+    "src/store/gameStore.ts",
+    "src/components/GameBoard.tsx",
+    "src/components/GameStatus.tsx",
+    "src/pages/Game.tsx",
+    "src/App.tsx"
+  ],
+  "components": [
+    "GameBoard",
+    "GameStatus",
+    "Game",
+    "App"
+  ],
+  "types": [
+    "Player",
+    "Cell",
+    "Board",
+    "GameState",
+    "GameStore"
+  ],
+  "store": {
+    "useGameStore": "Zustand store for game state management"
+  },
+  "functions": [
+    "checkWinner",
+    "makeMove",
+    "resetGame",
+    "renderCell"
+  ],
+  "variables": [
+    "initialState",
+    "winningCombos"
+  ]
+}
